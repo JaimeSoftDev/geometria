@@ -7,6 +7,9 @@ public class Circulo_JMM extends FiguraGeometrica_JMM {
 	public Circulo_JMM(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if(r<0) {
+			r = Math.abs(r);
+		}
 	}
 
 	@Override
